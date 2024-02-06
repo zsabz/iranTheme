@@ -1,0 +1,120 @@
+{
+  "resources/js/Pages/Auth/Test copy.jsx": {
+    "file": "assets/Test copy-498add2e.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Auth/Test copy.jsx"
+  },
+  "resources/js/Pages/Dashboard.jsx": {
+    "file": "assets/Dashboard-60e78899.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Dashboard.jsx"
+  },
+  "resources/js/Pages/Test.jsx": {
+    "file": "assets/Test-97a25b0a.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Test.jsx"
+  },
+  "resources/js/Pages/Welcome.jsx": {
+    "file": "assets/Welcome-5e3f2786.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Welcome.jsx"
+  },
+  "resources/js/Pages/shop/Main.jsx": {
+    "file": "assets/Main-b6562af0.js",
+    "imports": [
+      "resources/js/app.jsx",
+      "resources/js/Pages/shop/components/Footer.jsx",
+      "resources/js/Pages/shop/components/Header.jsx",
+      "resources/js/Pages/shop/components/Sidbar.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/Main.jsx"
+  },
+  "resources/js/Pages/shop/components/Footer.jsx": {
+    "file": "assets/Footer-68312012.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/components/Footer.jsx"
+  },
+  "resources/js/Pages/shop/components/Header.jsx": {
+    "file": "assets/Header-4c91288d.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/components/Header.jsx"
+  },
+  "resources/js/Pages/shop/components/Sidbar.jsx": {
+    "file": "assets/Sidbar-5e20ef62.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/components/Sidbar.jsx"
+  },
+  "resources/js/Pages/shop/components/SingleProduct copy.jsx": {
+    "file": "assets/SingleProduct copy-197c88ae.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/components/SingleProduct copy.jsx"
+  },
+  "resources/js/Pages/shop/components/SingleProduct.jsx": {
+    "file": "assets/SingleProduct-197c88ae.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/components/SingleProduct.jsx"
+  },
+  "resources/js/Pages/shop/components/index.jsx": {
+    "file": "assets/index-7d9525df.js",
+    "imports": [
+      "resources/js/Pages/shop/components/Header.jsx",
+      "resources/js/Pages/shop/components/Sidbar.jsx",
+      "resources/js/Pages/shop/components/SingleProduct.jsx",
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/components/index.jsx"
+  },
+  "resources/js/Pages/shop/shop.jsx": {
+    "file": "assets/shop-4ed993c7.js",
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/shop/shop.jsx"
+  },
+  "resources/js/app.jsx": {
+    "dynamicImports": [
+      "resources/js/Pages/Auth/Test copy.jsx",
+      "resources/js/Pages/Dashboard.jsx",
+      "resources/js/Pages/Test.jsx",
+      "resources/js/Pages/Welcome.jsx",
+      "resources/js/Pages/shop/Main.jsx",
+      "resources/js/Pages/shop/components/Footer.jsx",
+      "resources/js/Pages/shop/components/Header.jsx",
+      "resources/js/Pages/shop/components/Sidbar.jsx",
+      "resources/js/Pages/shop/components/SingleProduct copy.jsx",
+      "resources/js/Pages/shop/components/SingleProduct.jsx",
+      "resources/js/Pages/shop/components/index.jsx",
+      "resources/js/Pages/shop/shop.jsx"
+    ],
+    "file": "assets/app-8b287f87.js",
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  }
+}

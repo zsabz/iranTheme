@@ -1,0 +1,30 @@
+{{-- <script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/jquery.hoverIntent.min.js"></script>
+<script src="/assets/js/jquery.waypoints.min.js"></script>
+<script src="/assets/js/superfish.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/wNumb.js"></script>
+<script src="/assets/js/bootstrap-input-spinner.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/nouislider.min.js"></script>
+<!-- Main JS File -->
+<script src="/assets/js/main.js"></script>
+<script src="src/plugins/dropzone/src/dropzone.js"></script> --}}
+{{-- <script src="/assets/js/dropzone.js"></script> --}}
+<script src="/src/plugins/dropzone/src/dropzone.js"></script> 
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/status.js"></script>
+<script src="src/plugins/dropzone/src/dropzone.js"></script>
+<script src="/vendors/scripts/core.js"></script>
+<script src="/vendors/scripts/script.min.js"></script>
+<script src="/vendors/scripts/process.js"></script>
+<script src="/vendors/scripts/layout-settings.js"></script>
+{{-- <script src="/src/plugins/apexcharts/apexcharts.min.js"></script> --}}
+<script src="/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+<script src="/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.js"></script> --}}
+{{-- <script src="/vendors/scripts/dashboard3.js"></script> --}}

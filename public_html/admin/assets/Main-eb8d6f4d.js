@@ -1,0 +1,1 @@
+import{j as r}from"./app-0f6a30e5.js";import{AdminSidbar as e}from"./AdminSidbar-cfd5d00a.js";function s(){return r.jsxs(r.Fragment,{children:[r.jsx(e,{}),r.jsx("h1",{className:"bg-green-100 overflow-hidden shadow-sm sm:rounded-lg",children:"wellcom to admin"})]})}export{s as default};
