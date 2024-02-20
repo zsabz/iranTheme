@@ -1,6 +1,6 @@
 {
   "resources/js/Pages/Auth/Test copy.jsx": {
-    "file": "assets/Test copy-QbNRdyuR.js",
+    "file": "assets/Test copy-jR_t-UTC.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -8,7 +8,7 @@
     "src": "resources/js/Pages/Auth/Test copy.jsx"
   },
   "resources/js/Pages/Dashboard.jsx": {
-    "file": "assets/Dashboard-PTaFRQb-.js",
+    "file": "assets/Dashboard-3V52BrPR.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -16,7 +16,7 @@
     "src": "resources/js/Pages/Dashboard.jsx"
   },
   "resources/js/Pages/Downlode.jsx": {
-    "file": "assets/Downlode-04Ffqazu.js",
+    "file": "assets/Downlode-T7Cthulw.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -24,7 +24,7 @@
     "src": "resources/js/Pages/Downlode.jsx"
   },
   "resources/js/Pages/Shop/Basket.jsx": {
-    "file": "assets/Basket-rAZI8aHa.js",
+    "file": "assets/Basket-heweG65r.js",
     "imports": [
       "resources/js/app.jsx",
       "resources/js/Pages/Shop/components/BasketRow.jsx"
@@ -33,7 +33,7 @@
     "src": "resources/js/Pages/Shop/Basket.jsx"
   },
   "resources/js/Pages/Shop/BasketEmpty.jsx": {
-    "file": "assets/BasketEmpty-qEdLxCjm.js",
+    "file": "assets/BasketEmpty-sgfVlqrX.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -41,7 +41,7 @@
     "src": "resources/js/Pages/Shop/BasketEmpty.jsx"
   },
   "resources/js/Pages/Shop/Main.jsx": {
-    "file": "assets/Main-pqcgOUQL.js",
+    "file": "assets/Main-z2F4-Dez.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -49,7 +49,7 @@
     "src": "resources/js/Pages/Shop/Main.jsx"
   },
   "resources/js/Pages/Shop/components/BasketRow.jsx": {
-    "file": "assets/BasketRow-VH-qAgxc.js",
+    "file": "assets/BasketRow-1911ajY2.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -57,7 +57,7 @@
     "src": "resources/js/Pages/Shop/components/BasketRow.jsx"
   },
   "resources/js/Pages/Shop/components/Pagination.jsx": {
-    "file": "assets/Pagination-jWrvR0F1.js",
+    "file": "assets/Pagination-7XEq_8Ba.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -65,7 +65,7 @@
     "src": "resources/js/Pages/Shop/components/Pagination.jsx"
   },
   "resources/js/Pages/Shop/components/Search.jsx": {
-    "file": "assets/Search-P-27-C-g.js",
+    "file": "assets/Search-og1H74qR.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -73,7 +73,7 @@
     "src": "resources/js/Pages/Shop/components/Search.jsx"
   },
   "resources/js/Pages/Shop/components/Sidbar.jsx": {
-    "file": "assets/Sidbar-r5KM0jDd.js",
+    "file": "assets/Sidbar-T80lyYCl.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -81,7 +81,7 @@
     "src": "resources/js/Pages/Shop/components/Sidbar.jsx"
   },
   "resources/js/Pages/Shop/components/SingleProduct.jsx": {
-    "file": "assets/SingleProduct-C8vSlbeh.js",
+    "file": "assets/SingleProduct-rvuVTglu.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -89,7 +89,7 @@
     "src": "resources/js/Pages/Shop/components/SingleProduct.jsx"
   },
   "resources/js/Pages/Shop/components/index.jsx": {
-    "file": "assets/index-h-2oon-O.js",
+    "file": "assets/index-j8EyLmF5.js",
     "imports": [
       "resources/js/Pages/Shop/components/Sidbar.jsx",
       "resources/js/Pages/Shop/components/SingleProduct.jsx",
@@ -101,7 +101,7 @@
     "src": "resources/js/Pages/Shop/components/index.jsx"
   },
   "resources/js/Pages/Test.jsx": {
-    "file": "assets/Test-UP-SvbQ6.js",
+    "file": "assets/Test-VWBDm_OI.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -109,7 +109,7 @@
     "src": "resources/js/Pages/Test.jsx"
   },
   "resources/js/Pages/Welcome.jsx": {
-    "file": "assets/Welcome-1Ajk1C0e.js",
+    "file": "assets/Welcome-KGk_5TRK.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -133,7 +133,7 @@
       "resources/js/Pages/Test.jsx",
       "resources/js/Pages/Welcome.jsx"
     ],
-    "file": "assets/app-kn3WrXl6.js",
+    "file": "assets/app-JRZOeo_m.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   }
