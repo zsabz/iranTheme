@@ -22,7 +22,7 @@ class ComentController extends Controller
     public function index()
     {
         // dd('ii');
-        $comments = Coment::where('parent_id', 0)->with('child')->get();
+        $comments = Coment::where('parent_id', 0)->with('child')->paginate(5);
     // dd($comments);
         return $this->view('views::products.commentshow', true)->with(compact('comments'));
         // return view('admin.commentshow')->with(compact('comments'));
@@ -114,13 +114,13 @@ class ComentController extends Controller
         if($parent->parent_id == 0 )
         {
             // @dd($parent->id);
-            Coment::where('parent_id', $parent->id)->forceDelete();
-            $comment->forceDelete();
+            Coment::where('parent_id', $parent->id)->delete();
+            $comment->delete();
             // echo "nooo";
         }
         else
         {
-                     $comment->forceDelete();
+                     $comment->delete();
         }
         return redirect()->back()->with('message', 'حذف با موفقیت انجام شد');
         //

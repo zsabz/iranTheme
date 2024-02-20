@@ -18,11 +18,9 @@ class UserController extends Controller
     use SiteTraits;
 
     function index(){
-        $items = User::get();
-    //    $items=$items->with('products')->count();
-        $count = Product::where('athers_id',$items[0]->id)->count();
-        // dd($items);
-        return $this->view('views::products.user', true)->with(compact('items','count'));
+        $items = User::withCount('products')->paginate(5);
+
+    return $this->view('views::products.user', true)->with(compact('items'));
     }
 
     function show($id){

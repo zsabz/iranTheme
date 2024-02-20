@@ -1,0 +1,140 @@
+{
+  "resources/js/Pages/Auth/Test copy.jsx": {
+    "file": "assets/Test copy-QbNRdyuR.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Auth/Test copy.jsx"
+  },
+  "resources/js/Pages/Dashboard.jsx": {
+    "file": "assets/Dashboard-PTaFRQb-.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Dashboard.jsx"
+  },
+  "resources/js/Pages/Downlode.jsx": {
+    "file": "assets/Downlode-04Ffqazu.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Downlode.jsx"
+  },
+  "resources/js/Pages/Shop/Basket.jsx": {
+    "file": "assets/Basket-rAZI8aHa.js",
+    "imports": [
+      "resources/js/app.jsx",
+      "resources/js/Pages/Shop/components/BasketRow.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/Basket.jsx"
+  },
+  "resources/js/Pages/Shop/BasketEmpty.jsx": {
+    "file": "assets/BasketEmpty-qEdLxCjm.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/BasketEmpty.jsx"
+  },
+  "resources/js/Pages/Shop/Main.jsx": {
+    "file": "assets/Main-pqcgOUQL.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/Main.jsx"
+  },
+  "resources/js/Pages/Shop/components/BasketRow.jsx": {
+    "file": "assets/BasketRow-VH-qAgxc.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/BasketRow.jsx"
+  },
+  "resources/js/Pages/Shop/components/Pagination.jsx": {
+    "file": "assets/Pagination-jWrvR0F1.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/Pagination.jsx"
+  },
+  "resources/js/Pages/Shop/components/Search.jsx": {
+    "file": "assets/Search-P-27-C-g.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/Search.jsx"
+  },
+  "resources/js/Pages/Shop/components/Sidbar.jsx": {
+    "file": "assets/Sidbar-r5KM0jDd.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/Sidbar.jsx"
+  },
+  "resources/js/Pages/Shop/components/SingleProduct.jsx": {
+    "file": "assets/SingleProduct-C8vSlbeh.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/SingleProduct.jsx"
+  },
+  "resources/js/Pages/Shop/components/index.jsx": {
+    "file": "assets/index-h-2oon-O.js",
+    "imports": [
+      "resources/js/Pages/Shop/components/Sidbar.jsx",
+      "resources/js/Pages/Shop/components/SingleProduct.jsx",
+      "resources/js/Pages/Shop/components/BasketRow.jsx",
+      "resources/js/Pages/Shop/components/Search.jsx",
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/index.jsx"
+  },
+  "resources/js/Pages/Test.jsx": {
+    "file": "assets/Test-UP-SvbQ6.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Test.jsx"
+  },
+  "resources/js/Pages/Welcome.jsx": {
+    "file": "assets/Welcome-1Ajk1C0e.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Welcome.jsx"
+  },
+  "resources/js/app.jsx": {
+    "dynamicImports": [
+      "resources/js/Pages/Auth/Test copy.jsx",
+      "resources/js/Pages/Dashboard.jsx",
+      "resources/js/Pages/Downlode.jsx",
+      "resources/js/Pages/Shop/Basket.jsx",
+      "resources/js/Pages/Shop/BasketEmpty.jsx",
+      "resources/js/Pages/Shop/Main.jsx",
+      "resources/js/Pages/Shop/components/BasketRow.jsx",
+      "resources/js/Pages/Shop/components/Pagination.jsx",
+      "resources/js/Pages/Shop/components/Search.jsx",
+      "resources/js/Pages/Shop/components/Sidbar.jsx",
+      "resources/js/Pages/Shop/components/SingleProduct.jsx",
+      "resources/js/Pages/Shop/components/index.jsx",
+      "resources/js/Pages/Test.jsx",
+      "resources/js/Pages/Welcome.jsx"
+    ],
+    "file": "assets/app-kn3WrXl6.js",
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  }
+}

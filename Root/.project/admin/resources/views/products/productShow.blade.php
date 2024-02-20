@@ -26,12 +26,12 @@
             {{-- @dd($items[0]->user) --}}
             
             @if(Session()->has('message'))
-            <script>alert('حذف با موفقیت انجام شد')</script>
-         @endif
+            <p class="alert alert-info">{{ Session::get('message') }}</p>
+            @endif
             @foreach ($items as $item)        
             <tbody>
                 <tr class="table table-striped">
-                    <th scope="row">{{ $loop->iteration }}</th>
+                    <th scope="row">{{ (($items->currentPage() - 1) * $items->perPage()) + $loop->iteration }}</th>
                     <td>{{$item -> name}}</td>
                     <td>{{$item->category -> title}}</td>
                     <td>{{$item->user -> name}}</td>
@@ -47,7 +47,7 @@
                     </td>
                     <td><a href="product/{{$item->id}}/edit" class="badge badge-primary px-4">ویرایش</a></td>
                     <td>
-                    <form action="product/{{$item->id}}/" method="POST">
+                    <form action="home?mainModel=Product&relatedModel=Coment&id={{$item->id}}&relations=product" method="POST">
                         @csrf
                         @method('DELETE')
                         <button class="badge badge-danger px-4"  onclick="return myDelete();" type="submit">حذف</button>
@@ -72,5 +72,10 @@
         </table>
     </div>
 </div>
+
+
+
+
+@include('views::products.page')
 @endsection
 

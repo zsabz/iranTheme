@@ -19,18 +19,21 @@
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label> نام تم</label>
-                    <input name='name' type="text" class="form-control">
+                    <input name='name' value="{{ old('name') }}" type="text" class="form-control">
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label>عنوان تم</label>
 
-                    <input name='title' type="text" class="form-control">
+                    <input name='title' value="{{ old('title') }}" type="text" class="form-control">
                 </div>
             </div>
           
             <div class="col-md-6 col-sm-12">
+
+                
+   
             <div class="form-group">
                 <label>قیمت تم</label>
                 <input name='price'  class="form-control" min='50000' type="number" placeholder="حد اقل ورودی 50000">
@@ -38,14 +41,14 @@
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
-                    <label>تخفیف تم</label>
-
-                    <input name='discount_id'  type="percentage" class="form-control">
+                    <label> قیمت نهایی تم</label>
+                    <input name='finalPrice'  class="form-control" min='50000' type="number" placeholder="حد اقل ورودی 50000">
                 </div>
             </div>
         </div>
 
 
+<<<<<<< HEAD
         {{-- <span>کلمات کلیدی</span> --}}
             
         <select class="select2" data-label="کلمات کلیدی" name="states[]" multiple="multiple" style="width:100% ">
@@ -55,19 +58,27 @@
                  </option>
                  @endforeach
              </select> 
+=======
+        <div class="form-group">
+            <label>قیمت تم</label>
+            <input name='price' value='{{ old('price') }}' class="form-control" min='50000' type="number"
+                placeholder="حد اقل ورودی 50000">
+        </div>
+
+>>>>>>> 71dbe28e6cda94fd793b1c4f5b5450e372226928
 
         <div class="form-group">
             <label> تصویر شاخص </label>
             <div class="custom-file">
-                <input name='img' type="file" class="custom-file-input">
+                <input name='img' value="{{ old('img') }}" type="file" class="custom-file-input">
                 <label class="custom-file-label">Choose file</label>
             </div>
         </div>
 
-            <br>
-            <br>
-            <br>
-            <hr>
+        <br>
+        <br>
+        <br>
+        <hr>
 
         <p class='h2'>دسته بندی ها</p>
 
@@ -131,7 +142,7 @@
                     <input name="pre_file1" type="file" class="form-control">
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-7 col-sm-12">
                 <div class="form-group">
                     <label>لینک تم </label>
                     <input name="link" type="url" class="form-control">
@@ -154,8 +165,29 @@
 
         <div class="custom-control custom-checkbox mb-5">
             <input name='status' type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label" for="customCheck1" > استاندار های لازم برای این تم رعایت شده</label>
+            <label class="custom-control-label" for="customCheck1"> استاندار های لازم برای این تم رعایت شده</label>
         </div>
+
+
+
+        <br>
+        <br>
+        <br>
+        <div>
+            توضیح در باره ی تم
+            <textarea name="description" value="{{old('description')}}"></textarea>
+        </div>
+        <br>
+        <hr>
+        <p class='h2'> آپلود فایل تم</p>
+        <div class="form-group">
+            <label> فایل اصلی پروژه</label>
+            <div class="custom-file">
+                <input name="mainFile" type="file" class="custom-file-input">
+                <label class="custom-file-label">Choose file</label>
+            </div>
+        </div>
+
 
 
         <button type="submit" class="btn btn-success px-5 m-4">ثبت</button>

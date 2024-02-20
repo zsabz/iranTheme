@@ -1,6 +1,6 @@
 <?php 
-// use Illuminate\Support\Facades\Auth;
- $user = \Auth::user();
+use Illuminate\Support\Facades\Auth;
+ $user = Auth::user();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -194,7 +194,7 @@
                         <span class="user-icon">
                             <img src="vendors/images/photo1.jpg" alt="">
                         </span>
-                        <span class="user-name"> {{$user->name ?? 'لاگین نشده'}} </span>
+                        <span class="user-name"> {{$user->name}} </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                         <a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
@@ -250,10 +250,8 @@
                             <span class="micon bi bi-textarea-resize"></span><span class="mtext">Forms</span>
                         </a>
                         <ul class="submenu">
-                            <li><a href="/ad/addCategory">دسته بندی</a></li>
-                            <li><a href="/ad/product/key"> کلمات کلیدی</a></li>
-                            <li><a href="/ad/user">کاربران</a></li>
-                            <li><a href="/ad/slider">اسلایدر</a></li>
+                            <li><a href="/admin/addCategory"> اظافه کردن کتگوری</a></li>
+                         
                         </ul>
                     </li>
                    

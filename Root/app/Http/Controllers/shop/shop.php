@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\shop;
+
 use Inertia\Inertia;
 
 use App\Http\Controllers\Controller;
@@ -10,18 +11,24 @@ use App\Models\Product;
 
 class shop extends Controller
 {
-    
+
     /**
      * Display a listing of the resource.
      */
     public function index(Request $r)
     {
-        $products=Product::orderBy("id","desc")->paginate(9);
-        $category['item']=Category::all();
-        $category['price']=['max'=>$products->max('price'),'min'=>$products->min('price')];
-        
-        // return Inertia::render('shop/Main',['products'=>$products]);
-        return view('shop/index',compact('products','category'));
+        $products = Product::orderBy("id", "desc")
+            ->Search($r->all())
+            ->Filter($r->category)
+            ->paginate(9);
+        $category['item'] = Category::all();
+        $category['price'] = ['max' => $products->max('price'), 'min' => $products->min('price')];
+        // dd($products);
+        // dd(123);
+        // return response()->json(['products'=>$products,'category'=>$category]);
+        return Inertia::render('Shop/Main');
+        // return Inertia::render('Shop/Main', ['products' => $products, 'category' => $category]);
+        // return view('shop/index',compact('products','category'));
 
     }
 
@@ -46,9 +53,9 @@ class shop extends Controller
      */
     public function show(string $id)
     {
-        $product=Product::find($id);
+        $product = Product::find($id);
         // dd($product->previews);
-        return view('shop/product',compact('product'));
+        return view('shop/product', compact('product'));
     }
 
     /**

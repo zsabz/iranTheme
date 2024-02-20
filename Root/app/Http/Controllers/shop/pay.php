@@ -7,10 +7,15 @@ use Shetabit\Multipay\Invoice;
 use Shetabit\Payment\Facade\Payment;
 use App\Models\Pay as pays;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Product;
+use Illuminate\Support\Facades\URL;
+use Inertia\Inertia;
+
 class pay extends Controller
 {
-    function _constructor(){
+    function __construct(){
         $this->middleware('auth');
+        // dd(123);
     }
     function GetBasketData(){
         $basketInfo =Session::get('basket');
@@ -29,6 +34,7 @@ class pay extends Controller
         $pay->save();
         return $pay->id;
     }
+
    function index($amount){
     $invoice = new Invoice();
     // $invoice->amount(request()->mount);
@@ -42,11 +48,28 @@ class pay extends Controller
    }
 
 
+   function makeDownlodeLink($productIds,$payId){
+        $products= Product::find($productIds);
+        $links= [];
+
+        foreach($products as $product){
+            $link= URL::signedRoute('downlode', ['payId' => $payId,'product'=>$product->id]);
+            array_push($links, [$product->name,$link]);
+        } 
+        return $links;
+   }
+
    function result(request $r){
     if($r->Status =='OK'){
-        $payRecord=pays::find($r->id);
+        $payId=$r->id;
+        $payRecord=pays::find($payId);
         $payRecord->status =1;
+        $payRecord->save();
         Session::forget('basket');
+        $productIds= json_decode($payRecord->product_id);
+        $links= $this->makeDownlodeLink($productIds,$payId);
+        return Inertia::render('Downlode', ['links' => $links]);
+
     }
     echo $r->id;
    }

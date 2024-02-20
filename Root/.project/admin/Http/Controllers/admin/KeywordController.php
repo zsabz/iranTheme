@@ -15,7 +15,7 @@ class KeywordController extends Controller
     public function index()
     {
         // dd('rr');
-        $Keywords= Keyword :: get();
+        $Keywords= Keyword :: paginate(5);
         // dd($Keywords);
         // return view('views::products.keyword')->with(compact('Keywords'));
         return $this->view('views::products.keyword', true)->with(compact('Keywords')); 

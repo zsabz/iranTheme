@@ -1,0 +1,1 @@
+import{j as e}from"./app-5d4d3e08.js";function n(){return e.jsx("div",{className:"d-flex align-items-center justify-content-center",style:{"min-height":"70vh"},children:e.jsx("h1",{children:"سبد خرید شما خالی است"})})}export{n as default};

@@ -69,7 +69,7 @@
                     <td>{{$item -> name}}</td>
                     <td>{{$item -> email}}</td>
                     <td>{{$item -> role}}</td>
-                    <td>{{$item -> count()}}</td>
+                    <td>{{$item -> products_count}}</td>
                     {{-- <td>{{$item -> password}}</td> --}}
                     <td>{{$item -> phone}}</td>
                     <td><a href="user/{{$item->id}}/edit" class="badge badge-primary">ویرایش</a></td>
@@ -98,4 +98,6 @@
         </table>
     </div>
 </div>
+
+@include('views::products.page')
 @endsection

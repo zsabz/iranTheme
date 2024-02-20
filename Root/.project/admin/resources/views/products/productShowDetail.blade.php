@@ -1,9 +1,9 @@
 @extends('views::products.index');
 
 @section('productShowDetail')
-<div class="row">
-    {{-- <div class="col:6"> --}}
 <div class="pd-20 card-box mb-30" dir="rtl">
+        <div class="row">
+    <div class="col-8">
     <div class="table-responsive">
        {{-- @dd($items) --}}
         <div class="form-group">
@@ -11,6 +11,16 @@
              <br/>
              <label><h3>{{$items -> name}}</h3></label>
         </div>
+        <div class="form-group">
+            <label>قیمت محصول :</label>
+            <br/>
+            <label><h3>{{ number_format($items->price) }}</h3></label>
+       </div>
+       <div class="form-group">
+        <label>قیمت نهایی محصول :</label>
+        <br/>
+        <label><h3>{{  number_format($items->finalPrice)}}</h3></label>
+   </div>
         <div class="form-group">
             <label>توضیحات محصول  :</label>
             <br/>
@@ -29,7 +39,12 @@
    <h3> {{$it -> name}}-</h3>
     @endforeach
     </div>
-
+    </div>
+</div>
+   <div class="col-4" dir="ltr">
+    <img src="/img/products/{{$items -> img}}"/>
+   </div>
+        </div>
     <div class="form-group">
         <h2 class="card-title" style="color:chocolate">جدول نظرات</h2>
         <div class="table-responsive">

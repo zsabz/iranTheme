@@ -1,5 +1,5 @@
 <?php
-
+ 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +35,8 @@ Route::middleware(['auth', Admin\Http\Middleware\AdminGuard::class])->group(func
     Route::resource('/user', 'admin\UserController');
     Route::resource('/slider', 'admin\SliderController');
     Route::resource('/upload', 'admin\SliderController@upload');
+    Route::delete('/home', 'admin\HomeController@destroy');
+    Route::resource('/dash', 'admin\HomeController');
 
     Route::resource('/addProduct', 'admin\ProductController');
     // Route::get('login','Auth\LoginController@login');

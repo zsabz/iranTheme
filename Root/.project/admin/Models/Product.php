@@ -31,7 +31,7 @@ class Product extends Model
     public function comments()
     {
         // dd(123);
-        return $this->hasMany(\Admin\Models\Coment::class,'products_id');
+        return $this->hasMany(\Admin\Models\Coment::class,'product_id');
     }
     public function keywords()
     {

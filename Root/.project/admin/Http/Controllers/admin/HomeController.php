@@ -7,11 +7,24 @@ use Illuminate\Http\Request;
 use Admin\Http\Controllers\Traits\SiteTraits;
 use App\Http\Requests\Store;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use Admin\Models\Product;
+use Admin\Models\coment;
 class HomeController extends Controller
 {
     use SiteTraits;
     function index(){
-        $this->view('views::products/index', true);
+        // $count = Product::where('athers_id',$items[0]->id)->count();
+        $countUser=User::count();
+        $countProd=Product::count();
+        $countcom=Coment::count();
+        $total=Product::select('price')->sum('price');
+        $pro=Product::with('user')->orderBy('created_at','desc')->where('status',0)->get();
+        $users=User::orderBy('created_at','desc')->get()->take(5);
+        $products=Product::orderBy('created_at','desc')->get()->take(5);
+        $coments=Coment::orderBy('created_at','desc')->get()->take(5);
+        // dd($pro);
+        return   $this->view('views::products/dashboard', true)->with(compact('coments','users','products','pro','countUser','countProd','countcom','total'));
 
     }
 
@@ -47,12 +60,30 @@ class HomeController extends Controller
              return redirect('/ad/addCategory');
     }
 
-        public function destroy($id)
+        public function destroy(Request $request)
         {
+            // dd('ii');
+            $model = 'Admin\Models\\' . $request->mainModel;
+            $relatedModel = 'Admin\Models\\' . $request->relatedModel;
+            $fk = lcfirst($request->mainModel) . '_id';
             
-            $cat = Category::findOrFail($id);
-            $cat->delete();
-            return back();
+            $item=$model::find($request->id);
+            $rel = $relatedModel::where($fk, $request->id)->get();
+        // dd( $request->relatedModel);
+        // dd($rel);
+        if(count($rel)< 1){
+            $item->delete();
+            return back()->with('message', 'حذف انجام شد');
+        }
+        return back()->with('message', 'این محصول دارای' .$request->relatedModel .'و قادر به حذف نیستید');
             //
         }
+    
+
+        public function delete (request  $request){
+            dd('ttt');
+     
+        
+
+}
 }

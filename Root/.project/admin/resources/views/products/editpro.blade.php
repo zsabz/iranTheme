@@ -8,7 +8,7 @@
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label> نام تم</label>
-                    <input name='name' type="text" class="form-control">
+                    <input name='name' type="text" class="form-control" value={{ $item->title }}>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
@@ -27,6 +27,12 @@
             <label>قیمت تم</label>
             <input name='price' class="form-control" min='50000' value={{ number_format($item->price, 3, ',', ',') }}>
                  </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label> قیمت نهایی تم</label>
+                    <input name='finalPrice'  class="form-control" min='50000'  value={{ number_format($item->finalPrice, 3, ',', ',') }}>
+                </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
@@ -120,11 +126,13 @@
                     <input name="pre_file1" type="file" class="form-control">
                 </div>
             </div>
-
-            <div class="col-md-2 col-sm-12">
-                <button id="add_preview_row" type="button" class="btn btn-success">+</button>
-                <input type="hidden" id ='preview_row_number' name="preview_row_number" value="1">
-            </div>
+            
+                        <div class="col-md-7 col-sm-12">
+                            <div class="form-group">
+                                <label>لینک تم </label>
+                                <input name="link" type="url" class="form-control">
+                            </div>
+                        </div>
         </div>
 
         <div id='preview_append'></div>

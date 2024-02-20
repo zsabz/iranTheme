@@ -57,4 +57,6 @@
     $folder = 'slider';
 ?>
 @include('views::products.up')
+
+@include('views::products.page')
 @endsection

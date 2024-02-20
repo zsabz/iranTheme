@@ -36,7 +36,7 @@
                                     </form>
                                 </td>
                                 
-                                 <td><a href="coment/{{ $item->id }}" class="btn btn-info ">مشاهده</a></td>
+                                 {{-- <td><a href="coment/{{ $item->id }}" class="btn btn-info ">مشاهده</a></td> --}}
                               
                                <td><button onclick="ajax_change_statue(event,{{$item->id}}, {{$item->status}}, 'Coment')"
                                      class="btn btn-success btn-sm">

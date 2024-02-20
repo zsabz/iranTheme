@@ -10,5 +10,7 @@
     @yield('productShowDetail')
     @yield('productShow')
     @yield('slider')
+    @yield('dashboard')
+    
 
 @endsection

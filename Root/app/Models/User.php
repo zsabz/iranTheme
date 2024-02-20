@@ -44,7 +44,7 @@ class User extends Authenticatable
         'password' => 'hashed',
         'phone'=>'string',
     ];
-    public function product()
+    public function products()
     {
         return $this->hasMany(\Admin\Models\Product::class,'athers_id');
     }

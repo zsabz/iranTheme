@@ -35,9 +35,10 @@ class SetProducts extends Controller
 
 
             $path = $request->file('mainFile')->store("source");
-
+            // dd($path);
             // دریافت آدرس ذخیره شده فایل
-            $downlodeLink = Storage::url($path);
+            $downlodeLink = $path;
+            // $downlodeLink = Storage::url($path);
 
             $file = $request->file('img');
             $nameImg = $file->getClientOriginalName();

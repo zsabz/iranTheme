@@ -2,6 +2,7 @@
 
 namespace Admin\Models;
 
+use Admin\Models\Product;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -31,6 +32,10 @@ class Coment extends Model
  public function child()
     {
         return $this->hasMany(Coment::class , 'parent_id' , 'id');
+    }
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
     }
 
     

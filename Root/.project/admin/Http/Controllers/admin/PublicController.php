@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\Auth;
 
 class PublicController extends Controller
 {
+    use SiteTraits;
+    function index(){
+        
+        return $this->view('views::dashboard', true);
+
+    }
  
     public function active(Request $request)
     {

@@ -17,11 +17,11 @@ class ProductController extends Controller
     use SiteTraits;
     function index(){
         $items = Product::with('category','keywords','user')->get();
+        // dd($items);
         $category = Category::where('parent_id', 0)->with('child')->get();  
         $keyword = Keyword::get();  
         $users = User::get();  
-        // dd($keyword);  
-        // return view('views::products/category')->with(compact('items'));
+
         return $this->view('views::products.addProduct', true)->with(compact('users','items','category','keyword'));
     }
 
@@ -29,17 +29,16 @@ class ProductController extends Controller
         
         $items = Product::with(['comments' => function($q){
             $q->orderby('id', 'desc')->limit(3);
-        },'category','keywords','user'])->get();  
-
+        },'category','keywords','user'])->paginate(5);  
         // dd($items);
         return $this->view('views::products.productShow', true)->with(compact('items'));
     }
+
     function show($id)
     {
         $items = Product::with((['comments' => function($q){
             $q->where('parent_id', '0')->orderby('id', 'DESC');
         },'category','keywords']))->find($id);  
-        // dd($items->comments);
         return $this->view('views::products.productShowDetail', true)->with(compact('items'));
     }
 
@@ -53,13 +52,14 @@ class ProductController extends Controller
             'category_id'=>$request->category_id,
             'athers_id'=>$request->athers_id,
             // session()->get('test'),
-            'discount_id'=>$request->discount_id,
+            'finalPrice'=>$request->finalPrice,
+            'linkPreview'=>$request->link,
         ]);
         // dd($item);
         $item->keywords()->sync($request->states);
         return back()->with('success','کتگوری با موفقیت اظافه شد');
-
         }
+
         public function edit($id)
         {
               $items = Category::where('parent_id', 0)->with('child')->get();
@@ -80,16 +80,16 @@ class ProductController extends Controller
 
              return redirect('/ad/productShow');
     }
-
+    
         public function destroy($id)
         {            
             $cat = Product::findOrFail($id);
             // SoftDeleted
             $cat->delete();
-            $coment = Coment::where('products_id',$id)->first();
+            $coment = Coment::where('product_id',$id)->first();
             if ($coment <> null){
             $coment->delete();
             }
-            return redirect('/ad/productShow')->with('message', 'حذف با موفقیت انجام شد');
+            return redirect('/ad/productShomessagew')->with('', 'حذف با موفقیت انجام شد');
         }
 }

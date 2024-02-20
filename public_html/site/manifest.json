@@ -1,6 +1,6 @@
 {
   "resources/js/Pages/Auth/Test copy.jsx": {
-    "file": "assets/Test copy-498add2e.js",
+    "file": "assets/Test copy-c73b672e.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -8,15 +8,105 @@
     "src": "resources/js/Pages/Auth/Test copy.jsx"
   },
   "resources/js/Pages/Dashboard.jsx": {
-    "file": "assets/Dashboard-60e78899.js",
+    "file": "assets/Dashboard-a12cf236.js",
     "imports": [
       "resources/js/app.jsx"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Dashboard.jsx"
   },
+  "resources/js/Pages/Downlode.jsx": {
+    "file": "assets/Downlode-e2a55e87.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Downlode.jsx"
+  },
+  "resources/js/Pages/Shop/Basket.jsx": {
+    "file": "assets/Basket-c3400bc0.js",
+    "imports": [
+      "resources/js/app.jsx",
+      "resources/js/Pages/Shop/components/BasketRow.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/Basket.jsx"
+  },
+  "resources/js/Pages/Shop/BasketEmpty.jsx": {
+    "file": "assets/BasketEmpty-9761db31.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/BasketEmpty.jsx"
+  },
+  "resources/js/Pages/Shop/Main.jsx": {
+    "file": "assets/Main-9b73030d.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/Main.jsx"
+  },
+  "resources/js/Pages/Shop/components/BasketRow.jsx": {
+    "file": "assets/BasketRow-c113a7b6.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/BasketRow.jsx"
+  },
+  "resources/js/Pages/Shop/components/Pagination.jsx": {
+    "file": "assets/Pagination-597eb367.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/Pagination.jsx"
+  },
+  "resources/js/Pages/Shop/components/Search.jsx": {
+    "file": "assets/Search-d2e14ffd.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/Search.jsx"
+  },
+  "resources/js/Pages/Shop/components/Sidbar.jsx": {
+    "file": "assets/Sidbar-c19ec6b8.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/Sidbar.jsx"
+  },
+  "resources/js/Pages/Shop/components/SingleProduct.jsx": {
+    "file": "assets/SingleProduct-2a65a20d.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/SingleProduct.jsx"
+  },
+  "resources/js/Pages/Shop/components/index.jsx": {
+    "file": "assets/index-f76a5482.js",
+    "imports": [
+      "resources/js/Pages/Shop/components/Sidbar.jsx",
+      "resources/js/Pages/Shop/components/SingleProduct.jsx",
+      "resources/js/Pages/Shop/components/BasketRow.jsx",
+      "resources/js/Pages/Shop/components/Search.jsx",
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/components/index.jsx"
+  },
+  "resources/js/Pages/Shop/shop.jsx": {
+    "file": "assets/shop-4ed993c7.js",
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Shop/shop.jsx"
+  },
   "resources/js/Pages/Test.jsx": {
-    "file": "assets/Test-97a25b0a.js",
+    "file": "assets/Test-d6457dc1.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -24,96 +114,32 @@
     "src": "resources/js/Pages/Test.jsx"
   },
   "resources/js/Pages/Welcome.jsx": {
-    "file": "assets/Welcome-5e3f2786.js",
+    "file": "assets/Welcome-a64ca41a.js",
     "imports": [
       "resources/js/app.jsx"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Welcome.jsx"
   },
-  "resources/js/Pages/shop/Main.jsx": {
-    "file": "assets/Main-b6562af0.js",
-    "imports": [
-      "resources/js/app.jsx",
-      "resources/js/Pages/shop/components/Footer.jsx",
-      "resources/js/Pages/shop/components/Header.jsx",
-      "resources/js/Pages/shop/components/Sidbar.jsx"
-    ],
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/Main.jsx"
-  },
-  "resources/js/Pages/shop/components/Footer.jsx": {
-    "file": "assets/Footer-68312012.js",
-    "imports": [
-      "resources/js/app.jsx"
-    ],
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/components/Footer.jsx"
-  },
-  "resources/js/Pages/shop/components/Header.jsx": {
-    "file": "assets/Header-4c91288d.js",
-    "imports": [
-      "resources/js/app.jsx"
-    ],
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/components/Header.jsx"
-  },
-  "resources/js/Pages/shop/components/Sidbar.jsx": {
-    "file": "assets/Sidbar-5e20ef62.js",
-    "imports": [
-      "resources/js/app.jsx"
-    ],
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/components/Sidbar.jsx"
-  },
-  "resources/js/Pages/shop/components/SingleProduct copy.jsx": {
-    "file": "assets/SingleProduct copy-197c88ae.js",
-    "imports": [
-      "resources/js/app.jsx"
-    ],
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/components/SingleProduct copy.jsx"
-  },
-  "resources/js/Pages/shop/components/SingleProduct.jsx": {
-    "file": "assets/SingleProduct-197c88ae.js",
-    "imports": [
-      "resources/js/app.jsx"
-    ],
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/components/SingleProduct.jsx"
-  },
-  "resources/js/Pages/shop/components/index.jsx": {
-    "file": "assets/index-7d9525df.js",
-    "imports": [
-      "resources/js/Pages/shop/components/Header.jsx",
-      "resources/js/Pages/shop/components/Sidbar.jsx",
-      "resources/js/Pages/shop/components/SingleProduct.jsx",
-      "resources/js/app.jsx"
-    ],
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/components/index.jsx"
-  },
-  "resources/js/Pages/shop/shop.jsx": {
-    "file": "assets/shop-4ed993c7.js",
-    "isDynamicEntry": true,
-    "src": "resources/js/Pages/shop/shop.jsx"
-  },
   "resources/js/app.jsx": {
     "dynamicImports": [
       "resources/js/Pages/Auth/Test copy.jsx",
       "resources/js/Pages/Dashboard.jsx",
+      "resources/js/Pages/Downlode.jsx",
+      "resources/js/Pages/Shop/Basket.jsx",
+      "resources/js/Pages/Shop/BasketEmpty.jsx",
+      "resources/js/Pages/Shop/Main.jsx",
+      "resources/js/Pages/Shop/components/BasketRow.jsx",
+      "resources/js/Pages/Shop/components/Pagination.jsx",
+      "resources/js/Pages/Shop/components/Search.jsx",
+      "resources/js/Pages/Shop/components/Sidbar.jsx",
+      "resources/js/Pages/Shop/components/SingleProduct.jsx",
+      "resources/js/Pages/Shop/components/index.jsx",
+      "resources/js/Pages/Shop/shop.jsx",
       "resources/js/Pages/Test.jsx",
-      "resources/js/Pages/Welcome.jsx",
-      "resources/js/Pages/shop/Main.jsx",
-      "resources/js/Pages/shop/components/Footer.jsx",
-      "resources/js/Pages/shop/components/Header.jsx",
-      "resources/js/Pages/shop/components/Sidbar.jsx",
-      "resources/js/Pages/shop/components/SingleProduct copy.jsx",
-      "resources/js/Pages/shop/components/SingleProduct.jsx",
-      "resources/js/Pages/shop/components/index.jsx",
-      "resources/js/Pages/shop/shop.jsx"
+      "resources/js/Pages/Welcome.jsx"
     ],
-    "file": "assets/app-8b287f87.js",
+    "file": "assets/app-0345d01d.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   }

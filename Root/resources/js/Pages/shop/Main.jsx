@@ -1,44 +1,55 @@
-import { Footer } from './components/Footer';
-import * as index from './components/index';
-export default function  Main({products}){
-    return (
-        <>
-        {console.log(products.data)}
-        <index.Header/>
 
-            <main className='main'>
-                <div className="page-content">
-                    <div className="container">
-                        <div className="row">
-                            <index.Sidbar></index.Sidbar>
+import { SingleProduct, Sidbar, Search } from './components';
 
-                            <div className="col-lg-9">
-                                <div className="products mb-3">
-                                    <div className="row justify-content-centeR">
+export default function Main() {
+  alert()
+  return
+  return (
+    <>
+      {/* <Search></Search> */}
 
-                                            {products.data?.map(
-                                                function(product,index) {
-                                                    return(
-                                                        <footer key={index*3}>
-                                                            12
-                                                            {/* <index.SingleProduct key={index}/> */}
-                                                        </footer>
-                                                    )
+      <div className="search-index_content__searchContentSection"
+        id="content"
+        data-controller="filters-switcher"
+        data-filters-switcher-default-behavior-value="open"
+        data-filters-switcher-button-active-class="search-index_content__filtersActive"
+        data-filters-switcher-button-inactive-class="search-index_content__filtersInactive"
+        data-filters-switcher-desktop-hide-class="search-index_content__hideDesktopFilters"
+        data-filters-switcher-mobile-show-class="search-index_content__showMobileFilters"
+        data-filters-switcher-icon-hide-class="search-index_content__hide">
 
-                                                }
-                                            )}
-                                    </div>
-                                </div>
-                            </div>
+        <div className='search-index_content__searchResults'>
 
 
-                        </div>
-                    </div>
-                </div>
-            </main>
-            {console.log(products)}
+          <Sidbar categoris={category}></Sidbar>
 
-          <Footer/>
-        </>
-    )
+          <main className="search-index_content__searchResultsBody">
+            <div className="search-index_content__searchResultsWrapper">
+              <div
+                data-controller="analytics-item-impressions"
+                data-analytics-item-impressions-additional-params-value='{"dimension24":"portfolio","dimension25":6613,"dimension26":"site-templates"}'
+                className="search-item_cards_container_component__list">
+
+                {products.data?.map(
+                  function (product, index) {
+                    return (
+                      <>
+                        <SingleProduct item={product} />
+                      </>
+
+                    )
+
+                  }
+                )}
+
+              </div>
+            </div>
+          </main>
+
+
+        </div>
+      </div>
+
+    </>
+  )
 }

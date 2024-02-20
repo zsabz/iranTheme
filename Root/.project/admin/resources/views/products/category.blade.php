@@ -8,7 +8,7 @@
             <label class="col-sm-12 col-md-2 col-form-label">نوع دسته بندی</label>
             <div class="col-sm-12 col-md-10">
                 <select name='parent_id' class="custom-select col-12">
-                    <option value="">Choose...</option>
+                    <option value="0">دسته بندی والد</option>
                     @foreach ($items as $item)                
                     <option value={{$item->id}}>{{$item->title}}</option>
                     @endforeach
@@ -108,4 +108,6 @@
         </table>
     </div>
 </div>
+
+@include('views::products.page')
 @endsection

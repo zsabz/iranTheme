@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\AdminGuard;
 use App\Http\Controllers\admin\SetProducts;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,23 +37,23 @@ Route::prefix('admin')->middleware(['auth', AdminGuard::class])->group(function 
     Route::post('/addCategory', 'admin\CategoryController@store');
 });
 
-Route::get('/shop', 'shop\shop@index');
+Route::get('/shop/{category?}', 'shop\shop@index');
 Route::get('/product/{id}', 'shop\shop@show');
 Route::get('/basket', 'basket\basket@index');
 
 
 
 Route::get('/', function () {
-    return view('welcome');
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return inertia('Welcome');
+    // return Inertia::render('Welcome', [
+    //     'canLogin' => Route::has('login'),
+    //     'canRegister' => Route::has('register'),
+    //     'laravelVersion' => Application::VERSION,
+    //     'phpVersion' => PHP_VERSION,
+    // ]);
 });
 
-Route::get('/store','storeg@index');
+Route::get('/store', 'storeg@index');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -64,11 +65,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/pay/{amount}/{orderId}', 'shop\pay@index')->name('pay');
+Route::get('/pay/{amount}', 'shop\pay@index')->name('pay');
 Route::get('/payresult', 'shop\pay@result')->name('payresult');
 Route::post("/basketadd/{id}", 'basket\basket@addToBasket');
 Route::get("/basketadd/{id}", 'basket\basket@addToBasket');
 Route::get("/basketdata", 'basket\basket@GetBasketData');
 Route::get("/basketforget", 'basket\basket@forget');
+Route::get('/download','downlod\downlod@index')->name('downlode');
+Route::post("/basket/remove/{id}",'basket\basket@removeItem');
 require __DIR__ . '/auth.php';
 // require __DIR__.'/admin.php';
+
+Route::get('/auth',function(){
+    Auth::onceBasic();
+});

@@ -12,14 +12,14 @@ class CategoryController extends Controller
 {
     use SiteTraits;
     function index(){
-        $items = Category::where('parent_id', 0)->with('child')->get();  
+        $items = Category::where('parent_id', 0)->with('child')->paginate(5);  
         // return view('views::products/category')->with(compact('items'));
         return $this->view('views::products.category', true)->with(compact('items'));
 
     }
 
     function store(Store $r){
-        
+        // dd($r);
         $r->validate([
                 'title' => 'required|string|max:20',
                 'parent_id' => 'required',
@@ -28,6 +28,7 @@ class CategoryController extends Controller
         ]);
         $category = new category();
         $category->title= $r->title;
+        // dd($category);
         $category->parent_id=$r->parent_id;
         $category->save();
         return back()->with('success','کتگوری با موفقیت اظافه شد');
