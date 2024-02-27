@@ -21,7 +21,6 @@ class SearchController extends Controller
             // $request->validate([
             //     'search-box' => 'nullable|alpha_space',
             // ]);
-            // dd(word);
             // $products = \App\Models\Product::select('name', 'id')->where('status', 1)->where('name', 'LIKE', '%' . $request->get('search_word') . '%')->limit(3)->get();
             $products = \Admin\Models\Product::select('name', 'id')->where('status', 1)->where('name', 'LIKE', '%' . $request->word . '%')->limit(3)->get();
             $keys = \Admin\Models\Keyword::select('name', 'id')->where('status', 1)->where('name', 'LIKE', '%' .  $request->word . '%')->limit(3)->get();
@@ -30,6 +29,7 @@ class SearchController extends Controller
             // $psubjects = \App\Models\Psubject::select('title', 'id')->where('active', 1)->where('title', 'LIKE', '%' . $request->get('search-box') . '%')->limit(3)->get();
             // $keywords  = \App\Models\Keyword::select('title', 'id')->where('active', 1)->where('title', 'LIKE', '%' . $request->get('search-box') . '%')->limit(3)->get();
             // return response()->json(['status' => 200, 'result' => ['products' => $products, 'blogs' => $blogs, 'bsubjects' => $bsubjects, 'psubjects' => $psubjects, 'keywords' => $keywords]]);
+            // dd('word');
             return response()->json(['status' => 200, 'result' => ['products' => $products,'keys' => $keys]]);
         // }
         // $perPage = 4;

@@ -177,7 +177,7 @@ $(".search-input").on({
   keyup: function () {
     $(".hero__search__form  .dropdown-menu").fadeIn(500);
     $(".result").html("");
-
+    
     search($(this));
   },
 });
@@ -196,6 +196,7 @@ const search = (input) => {
       word: word,
     },
     success: function (response) {
+      alert();
       console.log(response);
       if (
         response.result.products.length < 1 &&

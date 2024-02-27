@@ -1,4 +1,4 @@
-@extends('views::products.index');
+@extends('views::products.index')
 
 @section('productShow')
 
@@ -50,7 +50,7 @@
                     <form action="home?mainModel=Product&relatedModel=Coment&id={{$item->id}}&relations=product" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button class="badge badge-danger px-4"  onclick="return myDelete();" type="submit">حذف</button>
+                        <button class="badge badge-danger px-4"  onclick="return myDelete()" type="submit">حذف</button>
                     </form>
                     </td>
                     <td><a href="product/{{$item->id}}" class="badge badge-warning">مشاهده</a></td>
