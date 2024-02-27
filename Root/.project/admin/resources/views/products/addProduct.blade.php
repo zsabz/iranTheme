@@ -1,4 +1,4 @@
-@extends('views::products.index');
+@extends('views::products.index')
 
 @section('addpro')
 

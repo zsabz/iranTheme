@@ -1,4 +1,4 @@
-@extends('views::master');
+@extends('views::master')
 
     @section('content')
     @yield('category')
